@@ -1,13 +1,23 @@
-import React from 'react';
+
 import NavBar from '../../navbar/NavBar';
 import Banner from '../../Banner/Banner';
+import { useLoaderData } from 'react-router-dom';
+import Card from '../../card/Card';
+import Footer from '../../footer/Footer';
 
 const Home = () => {
+
+    const yogaCard = useLoaderData()
+
+
+
     return (
         <div>
-            <NavBar></NavBar>
+            
             <Banner></Banner>
-            <h2 className=''>This is me</h2>
+            <Card yogaCard={yogaCard}></Card>
+            <Footer></Footer>
+
         </div>
     );
 };

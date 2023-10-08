@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/pjsj7fq/female-yoga-teacher-teaching-class.jpg",
+        "title": "Mindful Movement",
+        "category_bg": "rgb(147, 203, 246)",
+        "card_bg": "#D9E5FF",
+        "text_button_bg": "#0052FF",
+        "description": "Yoga emphasizes the connection between body and mind through deliberate postures and controlled breathing.",
+        "big":"Yoga is a holistic practice that intertwines physical postures, breathing exercises, and meditation techniques. One of its core tenets is the cultivation of mindful movement. This involves moving through asanas (poses) with a heightened sense of awareness, paying close attention to the body's sensations, breath, and alignment.",
+        "price": 290
+    },
+   
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/gd2RDmH/group-meditation.jpg",
+        "title": "Stress Relief and Relaxation",
+       
+        "category_bg": "rgb(255, 196, 197)",
+        "card_bg": "#FFE3E4",
+        "text_button_bg": "#FF444A",
+        "description": "Through calming poses and relaxation techniques, it helps release tension, leading to a sense of calm and inner peace.",
+        "big":"In a world filled with constant stimuli and demands, yoga offers a sanctuary of calm. Through a combination of gentle movements, restorative poses, and relaxation techniques, it provides a space for individuals to unwind, release tension, and find solace from the pressures of daily life.",
+        "price": 290
+    },
+   
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/dM8JBF3/young-beautiful-woman-doing-yoga-nature.jpg",
+        "title": "Enhanced Flexibility and Balance",
+      
+        "category_bg": "rgb(206, 233, 199)",
+        "card_bg": "#EBF6E2",
+        "text_button_bg": "#79C23F",
+        "description": "Regular yoga practice increases flexibility and improves balance.",
+        "big":"Yoga is renowned for its transformative impact on the body's physical capacity. Through a series of dynamic stretches, invigorating poses, and balancing exercises, practitioners gradually increase their flexibility and refine their sense of equilibrium.",
+        "price": 290
+    },
+   
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/3McqHQ3/woman-practicing-yoga-outdoors.jpg",
+        "title": "Strengthening Core and Muscles",
+     
+        "category_bg": "#f8714733",
+        "card_bg": "#FEEAE4",
+        "text_button_bg": "#F87147",
+        "description": "Yoga targets both major and stabilizing muscle groups, promoting overall strength. ",
+        "big":"Postures like Plank, Downward-Facing Dog, and Warrior series not only target major muscle groups but also activate stabilizing muscles that are often neglected in traditional strength training. This holistic approach to strength development supports a balanced and functional physique, reducing the risk of imbalances or overuse injuries.",
+        "price": 290
+    },
+   
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/55YYxs4/group-three-young-sporty-people-sitting-sukhasana-pose.jpg",
+        "title": "Improved Posture and Alignment",
+     
+        "category_bg": "#f8714733",
+        "card_bg": "#FEEAE4",
+        "text_button_bg": "#F87147",
+        "description": "Yoga emphasizes correct alignment and posture in each pose.",
+        "big":"Yoga places a significant emphasis on correct alignment and posture in each pose. By consciously adjusting the body to achieve optimal alignment, practitioners develop an acute awareness of their physical structure. This attention to detail extends beyond the mat and into everyday life. As individuals become more attuned to their posture, they are better equipped to maintain spinal health and overall alignment.",
+        "price": 290
+    },
+   
+   
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/C0NZpWS/beautiful-girls-are-playing-yoga-park.jpg",
+        "title": "Mental Clarity and Focus",
+    
+        "category_bg": "rgb(206, 233, 199)",
+        "card_bg": "#EBF6E2",
+        "text_button_bg": "#79C23F",
+        "description": "Through meditation and concentration exercises, yoga cultivates mental clarity.",
+        "big":"Beyond its physical benefits, yoga is a powerful practice for mental and emotional well-being. Central to this aspect is the cultivation of mental clarity and focus through meditation and concentration exercises. By training the mind to remain present and attentive, practitioners develop a heightened sense of awareness. ",
+        "price": 290
+    }
+   
+   
+   
+
+    
+]

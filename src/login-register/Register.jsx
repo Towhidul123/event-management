@@ -1,10 +1,14 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../firebase/firebase.config";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 
 const Register = () => {
+
+    const {createUser} = useContext(AuthContext)
+
 
     const [registerError, setRegisterError] = useState('');
     const [success, setSuccess] = useState('');
@@ -19,11 +23,20 @@ const Register = () => {
 
         console.log(name, email, password);
 
-
+        createUser(email,password)
+        .then(result => {
+            console.log(result.user)
+            setSuccess('User Created Successfully')
+        })
+        .catch(error => {
+            console.error(error);
+            setRegisterError(error.message);
+        })
 
         setRegisterError('');
         setSuccess('');
 
+        
         if (password.length < 6) {
             setRegisterError("Password must be at least 6 characters");
             return;
@@ -40,16 +53,8 @@ const Register = () => {
         }
         
 
-
-        createUserWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                console.log(result.user)
-                setSuccess('User Created Successfully')
-            })
-            .catch(error => {
-                console.error(error);
-                setRegisterError(error.message);
-            })
+ 
+          
     }
 
 

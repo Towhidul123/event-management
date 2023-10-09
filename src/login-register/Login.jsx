@@ -1,19 +1,41 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import auth from "../firebase/firebase.config";
-import { useState } from "react";
-
+import { useContext, useState } from "react";
+import { AuthContext } from "../providers/AuthProvider";
+import { Link, useLocation, useNavigation } from "react-router-dom";
 
 const Login = () => {
 
+    const {signInUser} = useContext(AuthContext);
+
     const [loginError, setLoginError] = useState('');
     const [success, setSuccess] = useState('');
+
+   const navigate = useNavigate();
+
 
     const handleLogin = e =>{
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email,password);
+
+        signInUser(email, password)
+        .then(result => {
+            console.log(result.user)
+            setSuccess('Logged In Successfully')
+            e.target.reset();
+            navigate('/')
+        })
+        .catch(error => {
+            console.error(error);
+            if (error.code === 'auth/invalid-login-credentials') {
+                setLoginError("Invalid email or password. Please check your credentials.");
+            } else {
+                setLoginError(error.message);
+            }
+        });
 
         setLoginError('');
         setSuccess('');
@@ -27,23 +49,7 @@ const Login = () => {
             setLoginError("Password does not match")
             return ;
         }
-      
-
-
-        signInWithEmailAndPassword(auth, email,password)
-        .then(result => {
-            console.log(result.user)
-            setSuccess('Logged In Successfully')
-        })
-        .catch(error => {
-            console.error(error);
-            if (error.code === 'auth/invalid-login-credentials') {
-                setLoginError("Invalid email or password. Please check your credentials.");
-            } else {
-                setLoginError(error.message);
-            }
-        });
-
+         
     }
 
 

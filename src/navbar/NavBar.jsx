@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 
+
 const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext)
@@ -49,7 +50,8 @@ const NavBar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <img src="/13082.jpg" alt="logo-ct" className="w-10" />
+                    <h2>asd</h2>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

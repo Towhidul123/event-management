@@ -6,6 +6,8 @@ import Login from "../login-register/Login";
 import Error from "../errorpage/Error";
 import CardDetails from "../details/CardDetails";
 import PrivateRoute from "../privateroute/PrivateRoute";
+import Profile from "../misc/Profile";
+import Aboutus from "../misc/Aboutus";
 
 const routes = createBrowserRouter([
     {
@@ -31,7 +33,19 @@ const routes = createBrowserRouter([
                 path:'/card/:id',
                 element:<PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
                 loader: () => fetch('/data.json')
+            },
+
+            {
+                path:'/profile',
+                element:<PrivateRoute><Profile></Profile></PrivateRoute>,
+            },
+            
+            {
+                path:'/about',
+                element:<PrivateRoute><Aboutus></Aboutus></PrivateRoute>,
             }
+
+
         ]
     }
 ])

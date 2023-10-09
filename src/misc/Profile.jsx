@@ -15,7 +15,7 @@ const Profile = () => {
 
             <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
-                    <img src={user.photoURL} alt="profile-picture"  />
+                    <img src={user.photoURL} alt="profile-picture" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div className="p-6 text-center">
                     <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">

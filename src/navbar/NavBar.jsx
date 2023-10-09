@@ -20,7 +20,7 @@ const NavBar = () => {
         } to='/'>Home</NavLink></li>
 
 
-        { user &&
+        {user &&
             <>
                 <li><NavLink className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-red-600 underline" : ""
@@ -51,7 +51,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <img src="/13082.jpg" alt="logo-ct" className="w-10" />
-                    <h2>asd</h2>
+                    <h2 className="font-cust font-bold text-xl">Harmony Haven </h2>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -62,7 +62,15 @@ const NavBar = () => {
                 <div className="navbar-end">
                     {
                         user ? <>
-                            <span>{user.email}</span>
+
+                            <div className="px-2 flex flex-col items-center">
+                                <img
+                                    className="relative mr-4 inline-block h-6 w-6 rounded-md object-cover object-center"
+                                    alt="Image placeholder"
+                                    src={user.photoURL}
+                                />
+                                 <h2>{user.displayName}</h2>
+                            </div>
                             <button className="btn" onClick={handleLogOut}>Sign Out</button>
                         </>
                             :

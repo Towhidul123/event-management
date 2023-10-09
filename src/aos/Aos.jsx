@@ -11,7 +11,7 @@ const Aos = () => {
                <h2> Our Reviews <br />throughout the years</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 w-[312px] md:w-auto">
+            <div className="grid md:grid-cols-2 w-[312px] md:w-auto gap-10">
 
 
                 <div className="flex justify-center" data-aos="fade-up">
@@ -107,12 +107,6 @@ const Aos = () => {
                             </p>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
 
                 <div className="flex justify-center" data-aos="fade-down">
@@ -211,7 +205,7 @@ const Aos = () => {
 
                 </div>
 
-                <div className="flex justify-center" data-aos="fade-right">
+                <div className="flex justify-center" data-aos="fade-up">
 
                     <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                         <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
@@ -307,7 +301,7 @@ const Aos = () => {
 
                 </div>
 
-                <div className="flex justify-center" data-aos="fade-left">
+                <div className="flex justify-center" data-aos="fade-down">
 
                     <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                         <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
@@ -403,7 +397,7 @@ const Aos = () => {
 
                 </div>
 
-                <div className="flex justify-center" data-aos="fade-up-right">
+                <div className="flex justify-center" data-aos="fade-up">
 
                     <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                         <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
@@ -499,7 +493,7 @@ const Aos = () => {
 
                 </div>
 
-                <div className="flex justify-center" data-aos="fade-up-left">
+                <div className="flex justify-center" data-aos="fade-down">
 
                     <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                         <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">

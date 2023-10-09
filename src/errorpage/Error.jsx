@@ -2,8 +2,8 @@
 
 const Error = () => {
     return (
-        <div>
-              Something is wrong
+        <div className="text-center ">
+             404 <br /> Something is wrong
         </div>
     );
 };
